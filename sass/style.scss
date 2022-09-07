@@ -1,0 +1,47 @@
+@use 'resources';
+
+* {
+    box-sizing: content-box;
+    background-color: resources.$DarkBlue;
+    margin: 0;
+
+    border: 1px solid red;
+}
+
+.card {
+    width: 329px;
+    height: 362px;
+    margin: auto;
+    margin-top: 153px ;
+    border-radius: 10px;
+    background-color: resources.$Blue;
+
+    .card__img {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        margin-top: 23px;
+        margin-left: 30px ;
+        border-radius: 100px;
+        background-color: resources.$Orange;
+    }
+
+    .card__title {
+        width: 278px;
+        text-align: left;
+        margin-top: 77px;
+        margin-left: 30px;
+        font-size: 24px;
+    }
+
+    .card__description {
+        
+        width: 278px;
+        height: 64px;
+        margin-left: 30px;
+        
+        text-align: left;
+        font-size: 14px;
+    }
+
+}
