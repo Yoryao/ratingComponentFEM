@@ -112,3 +112,44 @@
 
     
 }
+
+.secondCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__img{
+        img {background-color: resources.$Blue;
+        }
+    }
+
+    &__ratingInfo{
+        width: 60%;
+        height: 30px;
+        text-align: center;
+        font-size: 16px;
+        color: resources.$Orange;
+        background-color: resources.$MediumGrey;
+        border-radius: 50px;
+    }
+
+    &__thankyou {
+        font-size: 30px;
+        background-color: resources.$MediumGrey;
+
+    }
+
+    &__text {
+        width: 90%;
+        background-color: resources.$MediumGrey;
+
+    }
+
+
+}
+
+
+.hide {
+    display:none;
+}
