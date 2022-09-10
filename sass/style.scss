@@ -13,7 +13,8 @@
     height: 362px;
     margin: auto;
     margin-top: 153px ;
-    border-radius: 10px;
+    
+    border-radius: 25px;
     background-color: resources.$Blue;
 
     .card__img {
@@ -29,7 +30,9 @@
     .card__title {
         width: 278px;
         text-align: left;
-        margin-top: 77px;
+        background-color: resources.$Blue;
+        border: none;
+        margin-top: 85px;
         margin-left: 30px;
         font-size: 24px;
     }
@@ -39,9 +42,73 @@
         width: 278px;
         height: 64px;
         margin-left: 30px;
-        
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: none;
+
+        background-color: resources.$Blue;
+        color: resources.$LigthGrey;
         text-align: left;
-        font-size: 14px;
+        font-size: 12.5px;
     }
 
+    .card__numbers {
+        width: 278px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: none;
+        background-color: resources.$Blue;
+
+        .card__number {
+            width: 40px;
+            height: 40px;
+            border: 1px solid red;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: resources.$MediumGrey;
+        color: resources.$LigthGrey;
+
+        &:hover {
+            background-color: resources.$LigthGrey;
+            color: resources.$White;
+            cursor: pointer;
+        }
+
+    }
+    
+    .paintOrange {
+        background-color: resources.$Orange;
+        color: resources.$White;
+    }
+
+    
+    }
+    .card__submitBtn {
+        display: flex;
+        width: 278px;
+        height: 50px;
+        margin-left: 30px;
+        background-color: resources.$Orange;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 3px;
+        border-radius: 50px;
+
+        &:hover {
+            background-color: resources.$White;
+            color: resources.$Orange;
+            cursor: pointer;
+            cursor: ns-resize;
+            
+        }
+
+    }
+
+    
 }

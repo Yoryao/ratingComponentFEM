@@ -22,7 +22,7 @@
   height: 362px;
   margin: auto;
   margin-top: 153px;
-  border-radius: 10px;
+  border-radius: 25px;
   background-color: hsl(213deg, 19%, 18%);
 }
 .card .card__img {
@@ -37,7 +37,9 @@
 .card .card__title {
   width: 278px;
   text-align: left;
-  margin-top: 77px;
+  background-color: hsl(213deg, 19%, 18%);
+  border: none;
+  margin-top: 85px;
   margin-left: 30px;
   font-size: 24px;
 }
@@ -45,8 +47,61 @@
   width: 278px;
   height: 64px;
   margin-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(217deg, 12%, 63%);
   text-align: left;
-  font-size: 14px;
+  font-size: 12.5px;
+}
+.card .card__numbers {
+  width: 278px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  background-color: hsl(213deg, 19%, 18%);
+}
+.card .card__numbers .card__number {
+  width: 40px;
+  height: 40px;
+  border: 1px solid red;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(59, 59, 59);
+  color: hsl(217deg, 12%, 63%);
+}
+.card .card__numbers .card__number:hover {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+.card .card__numbers .paintOrange {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.card .card__submitBtn {
+  display: flex;
+  width: 278px;
+  height: 50px;
+  margin-left: 30px;
+  background-color: hsl(25deg, 97%, 53%);
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 3px;
+  border-radius: 50px;
+}
+.card .card__submitBtn:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+  cursor: pointer;
+  cursor: ns-resize;
 }
 
 /*# sourceMappingURL=style.css.map */
