@@ -1,58 +1,61 @@
-@use 'resources';
+@use "resources";
 
 * {
     box-sizing: content-box;
     background-color: resources.$DarkBlue;
-    margin: 0;
-
-    border: 1px solid red;
 }
 
 .card {
     width: 329px;
     height: 362px;
     margin: auto;
-    margin-top: 153px ;
-    
+    margin-top: 153px;
     border-radius: 25px;
     background-color: resources.$Blue;
 
-    .card__img {
+    &__img {
+        display: flex;
         width: 40px;
         height: 40px;
         position: absolute;
         margin-top: 23px;
-        margin-left: 30px ;
+        margin-left: 30px;
         border-radius: 100px;
-        background-color: resources.$Orange;
-    }
+        background-color: resources.$MediumGrey;
+        justify-content: center;
+        align-items: center;
+}
 
-    .card__title {
+    &__star {
+        background-color: resources.$MediumGrey;
+        color: resources.$Orange;
+        height: 50%;
+}
+
+    &__title {
+        display: f;
         width: 278px;
         text-align: left;
         background-color: resources.$Blue;
-        border: none;
         margin-top: 85px;
+        padding-top: 85px;
         margin-left: 30px;
         font-size: 24px;
-    }
+} 
 
-    .card__description {
-        
+    &__description {
         width: 278px;
         height: 64px;
         margin-left: 30px;
-        padding-top: 5px;
+        padding-top: 15px;
         padding-bottom: 5px;
-        border: none;
-
         background-color: resources.$Blue;
         color: resources.$LigthGrey;
         text-align: left;
         font-size: 12.5px;
-    }
+}
 
-    .card__numbers {
+    &__numbers {
         width: 278px;
         display: flex;
         flex-direction: row;
@@ -60,96 +63,106 @@
         justify-content: space-between;
         padding-top: 15px;
         padding-bottom: 15px;
-        border: none;
         background-color: resources.$Blue;
 
         .card__number {
             width: 40px;
             height: 40px;
-            border: 1px solid red;
             border-radius: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             background-color: resources.$MediumGrey;
-        color: resources.$LigthGrey;
+            color: resources.$LigthGrey;
 
-        &:hover {
-            background-color: resources.$LigthGrey;
-            color: resources.$White;
-            cursor: pointer;
+            &:hover {
+                background-color: resources.$LigthGrey;
+                color: resources.$White;
+                cursor: pointer;
+            }
         }
 
-    }
-    
-    .paintOrange {
-        background-color: resources.$Orange;
-        color: resources.$White;
-    }
+        .paintOrange {
+            background-color: resources.$Orange;
+            color: resources.$White;
+        }
+}
 
-    
-    }
-    .card__submitBtn {
-        display: flex;
-        width: 278px;
-        height: 50px;
-        margin-left: 30px;
-        background-color: resources.$Orange;
-        align-items: center;
-        justify-content: center;
-        letter-spacing: 3px;
-        border-radius: 50px;
+        .card__submitBtn {
+            display: flex;
+            width: 278px;
+            height: 45px;
+            margin-top: 15px;
+            margin-left: 30px;
+            background-color: resources.$Orange;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 3px;
+            border-radius: 50px;
 
         &:hover {
             background-color: resources.$White;
             color: resources.$Orange;
             cursor: pointer;
-            cursor: ns-resize;
-            
         }
-
-    }
-
-    
 }
-
-.secondCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    &__img{
-        img {background-color: resources.$Blue;
-        }
-    }
-
-    &__ratingInfo{
-        width: 60%;
-        height: 30px;
-        text-align: center;
-        font-size: 16px;
-        color: resources.$Orange;
-        background-color: resources.$MediumGrey;
-        border-radius: 50px;
-    }
-
-    &__thankyou {
-        font-size: 30px;
-        background-color: resources.$MediumGrey;
-
-    }
-
-    &__text {
-        width: 90%;
-        background-color: resources.$MediumGrey;
-
-    }
-
 
 }
 
+    .attribution {
+        position: fixed;
+        bottom:0px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
 
-.hide {
-    display:none;
+    .secondCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &__img {
+            img {
+                background-color: resources.$Blue;
+                height: 100%;
+            }
+        }
+
+        &__ratingInfo {
+            width: 60%;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: resources.$Orange;
+            background-color: resources.$MediumGrey;
+            border-radius: 50px;
+    }
+
+        &__thankyou {
+            font-size: 29px;
+            background-color: resources.$Blue;
+        }
+
+        &__text {
+            width: 92%;
+            color: resources.$LigthGrey;
+            background-color: resources.$Blue;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+}
+
+    .hide {
+        display: none;  
+    }
+
+@media (min-width > 375px) {
+    body {
+    background-color: yellow;
+}
 }

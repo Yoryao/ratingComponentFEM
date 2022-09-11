@@ -13,8 +13,6 @@
 * {
   box-sizing: content-box;
   background-color: hsl(216deg, 12%, 8%);
-  margin: 0;
-  border: 1px solid red;
 }
 
 .card {
@@ -25,37 +23,45 @@
   border-radius: 25px;
   background-color: hsl(213deg, 19%, 18%);
 }
-.card .card__img {
+.card__img {
+  display: flex;
   width: 40px;
   height: 40px;
   position: absolute;
   margin-top: 23px;
   margin-left: 30px;
   border-radius: 100px;
-  background-color: hsl(25deg, 97%, 53%);
+  background-color: rgb(59, 59, 59);
+  justify-content: center;
+  align-items: center;
 }
-.card .card__title {
+.card__star {
+  background-color: rgb(59, 59, 59);
+  color: hsl(25deg, 97%, 53%);
+  height: 50%;
+}
+.card__title {
+  display: f;
   width: 278px;
   text-align: left;
   background-color: hsl(213deg, 19%, 18%);
-  border: none;
   margin-top: 85px;
+  padding-top: 85px;
   margin-left: 30px;
   font-size: 24px;
 }
-.card .card__description {
+.card__description {
   width: 278px;
   height: 64px;
   margin-left: 30px;
-  padding-top: 5px;
+  padding-top: 15px;
   padding-bottom: 5px;
-  border: none;
   background-color: hsl(213deg, 19%, 18%);
   color: hsl(217deg, 12%, 63%);
   text-align: left;
   font-size: 12.5px;
 }
-.card .card__numbers {
+.card__numbers {
   width: 278px;
   display: flex;
   flex-direction: row;
@@ -63,13 +69,11 @@
   justify-content: space-between;
   padding-top: 15px;
   padding-bottom: 15px;
-  border: none;
   background-color: hsl(213deg, 19%, 18%);
 }
-.card .card__numbers .card__number {
+.card__numbers .card__number {
   width: 40px;
   height: 40px;
-  border: 1px solid red;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -77,19 +81,20 @@
   background-color: rgb(59, 59, 59);
   color: hsl(217deg, 12%, 63%);
 }
-.card .card__numbers .card__number:hover {
+.card__numbers .card__number:hover {
   background-color: hsl(217deg, 12%, 63%);
   color: hsl(0deg, 0%, 100%);
   cursor: pointer;
 }
-.card .card__numbers .paintOrange {
+.card__numbers .paintOrange {
   background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
 }
 .card .card__submitBtn {
   display: flex;
   width: 278px;
-  height: 50px;
+  height: 45px;
+  margin-top: 15px;
   margin-left: 30px;
   background-color: hsl(25deg, 97%, 53%);
   align-items: center;
@@ -101,7 +106,14 @@
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
   cursor: pointer;
-  cursor: ns-resize;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .secondCard {
@@ -112,27 +124,40 @@
 }
 .secondCard__img img {
   background-color: hsl(213deg, 19%, 18%);
+  height: 100%;
 }
 .secondCard__ratingInfo {
   width: 60%;
   height: 30px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   color: hsl(25deg, 97%, 53%);
   background-color: rgb(59, 59, 59);
   border-radius: 50px;
 }
 .secondCard__thankyou {
-  font-size: 30px;
-  background-color: rgb(59, 59, 59);
+  font-size: 29px;
+  background-color: hsl(213deg, 19%, 18%);
 }
 .secondCard__text {
-  width: 90%;
-  background-color: rgb(59, 59, 59);
+  width: 92%;
+  color: hsl(217deg, 12%, 63%);
+  background-color: hsl(213deg, 19%, 18%);
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .hide {
   display: none;
+}
+
+@media (min-width > 375px) {
+  body {
+    background-color: yellow;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
