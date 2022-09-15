@@ -16,9 +16,9 @@ function paintOrange(id) {
 }
 
 function sendRating () {
-    console.log("el rating fue: " + rating)
-
-    let ratingInfo = document.getElementById("ratingInfo");
+  if (rating == 0) return 
+ 
+  let ratingInfo = document.getElementById("ratingInfo");
     ratingInfo.innerText = "You selected " + rating + " out of 5";
 
     hideCard();
